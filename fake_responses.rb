@@ -118,12 +118,12 @@ end
 # Write responses to file.
 #
 
-def dir_path
-  File.expand_path("../", __FILE__)
+def data_path
+  File.expand_path("../data", __FILE__)
 end
 
 def write_responses_to_file(responses)
-  fake_responses_path = File.join(dir_path, "#{responses.count}_fake_responses.csv")
+  fake_responses_path = File.join(data_path, "#{responses.count}_fake_responses.csv")
 
   puts "WRITING #{responses.count} RESPONSES TO FILE -- #{fake_responses_path}"
 
@@ -136,7 +136,7 @@ def write_responses_to_file(responses)
   end
 end
 
-[1_000,10_000,100_000].each do |n|
+[100, 1_000, 10_000, 100_000].each do |n|
   fake_responses = generate_responses(n) #todo: don't load all responses into memory. write to file during initial loop
   write_responses_to_file(fake_responses)
 end
