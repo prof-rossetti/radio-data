@@ -1,6 +1,6 @@
 # Fake Responses
 
-Generates csv files of varying sizes, each filled with fake response data.
+Generates .csv files of varying sizes, each filled with fake response data.
 
 ## Prerequisities
 
@@ -20,3 +20,9 @@ Generate data.
 ```` sh
 ruby fake_responses.rb
 ````
+
+## Contributing
+
+Issues and Pull Requests are welcome.
+
+## [License](LICENCE)
