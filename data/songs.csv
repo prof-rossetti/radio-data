@@ -1,250 +1,255 @@
 id, title, artist_name, duration_milliseconds, year_recorded
-1,The Zookeeper and Her Tiger,"Pouros, Thompson and Weimann",338699,1983
-2,"Ready, Set, Die","Kuvalis, Ebert and Schowalter",235546,2015
-3,Keyboard For Hire,Breitenberg LLC,418686,1963
-4,The Frog Catchers Field Manual,Rice-Graham,244092,2000
-5,Covered and Warm,Dax Strosin,331179,2008
-6,The Frog Catchers Field Manual,"Crooks, Graham and Carroll",379294,1944
-7,The Zookeeper and Her Tiger,Tito Quigley,327673,1988
-8,Next Day Previous Night,Cathryn Vandervort,302574,1998
-9,Fishing With Chips,Steuber-Armstrong,175723,1943
-10,Tomato in the Window,Gulgowski-Harber,347555,1979
-11,Keyboard For Hire,Ellis Stoltenberg DDS,405628,1950
-12,Walking and Running,Cecilia Prosacco DDS,344762,1946
-13,Tomato in the Window,Erich Carter,251014,1963
-14,Covered and Warm,Nicholas Schoen,428883,1986
-15,Slicker Than Rain,Isabelle Ryan,313330,1962
-16,A Year of Walking,"Daniel, Macejkovic and Wiza",434134,1965
-17,Walking and Running,Neva Morar,226342,1977
-18,Slicker Than Rain,"Bosco, Hilll and Krajcik",269719,1961
-19,What Lives on Pluto,Kirlin LLC,156678,1978
-20,A Dozen Heros,Brigitte Sauer,318202,1994
-21,Keyboard For Hire,Yundt-Labadie,316189,1951
-22,"Stop Asking, Just Do",Orlando Cruickshank,405078,1996
-23,What Lives on Pluto,Izaiah Huel,206300,1987
-24,What Lives on Pluto,Ms. Jaron Jakubowski,421229,1952
-25,Burning Water,Ms. Matt Halvorson,200390,2007
-26,What Lives on Pluto,Carter LLC,422982,2012
-27,Tomato in the Window,Izaiah Kuphal,336236,1975
-28,The Zookeeper and Her Tiger,Stamm-Smith,400743,1965
-29,Future Discretions,Feeney-Green,350237,1961
-30,"Stop Asking, Just Do",Halle Botsford,210288,1997
-31,"Stop Asking, Just Do",Kaya Roberts I,222843,2013
-32,Free Parking,"Douglas, Batz and Ullrich",252067,1994
-33,Future Discretions,"Ortiz, McClure and Tremblay",154582,1996
-34,Covered and Warm,Bergnaum-Ritchie,146501,2004
-35,Free Parking,Clemens Mayer,447146,1956
-36,Walking and Running,Alexanne Quigley,310723,1975
-37,Burning Water,Terry Rohan,365974,1980
-38,A Year of Walking,Mr. Alfonso Bashirian,147926,1968
-39,Covered and Warm,"Hudson, Schiller and Glover",295123,1962
-40,Finding a New Sun,Towne-Gleason,456862,2000
-41,Candy For Two,"Langosh, Kozey and Rippin",304460,1998
-42,Slicker Than Rain,Kallie Walter,438148,1969
-43,The Frog Catchers Field Manual,Keagan Jast,291861,1995
-44,Walking and Running,Mr. Danny Nicolas,479418,2004
-45,The Frog Catchers Field Manual,Rolfson Inc,120317,1945
-46,Candy For Two,Justus Kilback,169479,1941
-47,Next Day Previous Night,"Muller, Towne and Vandervort",457892,2009
-48,A Dozen Heros,Sid Corkery,256202,1964
-49,Finding a New Sun,Easter Nitzsche,388674,1969
-50,Falling Flags,"Kuhn, Runolfsson and Hegmann",345975,1971
-51,What Lives on Pluto,Kristian Herman,329628,1968
-52,Falling Flags,"Nikolaus, Mueller and Nicolas",233172,1988
-53,Keyboard For Hire,Jameson Brakus,139817,1949
-54,Burning Water,Emmerich Inc,305893,1973
-55,The Odd Sister,Ms. Albertha Paucek,259494,1943
-56,Burning Water,Maribel O'Connell,304909,1967
-57,"Stop Asking, Just Do",Stark LLC,247795,1990
-58,Free Parking,Stacey Armstrong,300250,1973
-59,Walking and Running,Ernestine Auer MD,420774,1967
-60,Covered and Warm,"Rolfson, Kuhlman and Hilll",287646,1995
-61,Future Discretions,Schmidt-Buckridge,391059,1948
-62,Covered and Warm,"Hand, Hoeger and Wisoky",460294,1958
-63,Tomato in the Window,Maximilian Thompson,234900,1994
-64,"Stop Asking, Just Do",Clint Davis,258739,1995
-65,"Stop Asking, Just Do",Raul King,393728,1998
-66,Same Way Through,"Becker, Boehm and Wuckert",376734,1951
-67,The Odd Sister,Hilpert-Prohaska,230541,1966
-68,Same Way Through,Abagail Marvin,243553,1944
-69,A Year of Walking,Mills-Rempel,313084,1965
-70,Walking and Running,Mr. Brennan McDermott,298384,1972
-71,Slicker Than Rain,Funk and Sons,194421,1979
-72,The Odd Sister,Mrs. Napoleon Skiles,286487,2010
-73,The Frog Catchers Field Manual,Osinski-Schuster,442160,1948
-74,The Zookeeper and Her Tiger,Rodriguez-Hermiston,255044,1978
-75,Keyboard For Hire,Bradford Ernser,282249,1995
-76,Tomato in the Window,Fay Inc,219462,1994
-77,Next Day Previous Night,Alverta Reichert,413498,2008
-78,No Lonely Stars,Mathilde Bins MD,124888,2014
-79,Tomato in the Window,Lemke-Bayer,201791,1952
-80,Candy For Two,Fisher and Sons,473356,1999
-81,The Zookeeper and Her Tiger,Polly Monahan,300403,2007
-82,"Ready, Set, Die",Aniyah Batz,419894,1973
-83,Walking and Running,Mr. Virgil Block,401698,1948
-84,Candy For Two,Jadyn Schoen,472681,1969
-85,No Lonely Stars,Adelia Tromp DDS,257404,1984
-86,The Odd Sister,Kirsten Powlowski IV,185819,2004
-87,Fishing With Chips,Deshaun Wunsch Jr.,238138,2000
-88,Free Parking,Wolf Inc,478984,1978
-89,"Ready, Set, Die",Meaghan Marks,153173,1957
-90,Covered and Warm,Spencer-Dibbert,459404,2014
-91,"Stop Asking, Just Do",Maci Anderson,153522,1998
-92,The Frog Catchers Field Manual,Edna Schowalter,320620,1986
-93,The Zookeeper and Her Tiger,Bryce Dibbert,436704,1954
-94,Future Discretions,Gusikowski-Johnson,322128,1940
-95,Free Parking,Pfeffer Group,361228,2000
-96,Fishing With Chips,Miss Aletha Littel,310905,1959
-97,Candy For Two,Toy Inc,383126,2003
-98,The Odd Sister,"King, Bogan and Bashirian",420253,1943
-99,The Frog Catchers Field Manual,Reilly-McClure,256264,1965
-100,Next Day Previous Night,"Hermiston, Sanford and Lesch",161437,1993
-101,Walking and Running,Antonette Stanton,382644,1943
-102,"Ready, Set, Die",Gulgowski Inc,305548,2001
-103,"Stop Asking, Just Do",Graham-Schamberger,176458,1963
-104,Slicker Than Rain,Schultz-Buckridge,247423,1994
-105,Burning Water,Francis Bernhard,364262,1970
-106,Finding a New Sun,Conroy-Aufderhar,222524,2015
-107,Keyboard For Hire,Esteban Prosacco,470906,1950
-108,A Year of Walking,Langworth LLC,449498,1987
-109,Future Discretions,"Grimes, Price and Fisher",474647,1994
-110,Fishing With Chips,Borer Group,133855,1972
-111,Walking and Running,Gottlieb Inc,295171,1954
-112,Slicker Than Rain,Green Inc,187022,2008
-113,What Lives on Pluto,"Schinner, Satterfield and Waelchi",439564,1991
-114,Covered and Warm,"Feest, Kilback and Cassin",334645,1965
-115,What Lives on Pluto,Liana Pagac,121601,1990
-116,Next Day Previous Night,Henri Doyle,287875,1998
-117,Fishing With Chips,Louisa Braun,226620,1989
-118,A Dozen Heros,Orville Crist,240176,1974
-119,Finding a New Sun,Ms. Winston Beahan,385899,1943
-120,What Lives on Pluto,Wiza-Runte,336939,1959
-121,Same Way Through,Monte Mills,120467,1976
-122,Tomato in the Window,Ashtyn Windler,434557,1968
-123,Falling Flags,Jarvis Bauch,356144,1992
-124,The Frog Catchers Field Manual,Eleonore D'Amore DVM,127737,1975
-125,Fishing With Chips,Kelly Adams,253912,1956
-126,Covered and Warm,"Gislason, Wilderman and Cummings",323850,1948
-127,Falling Flags,Ms. Frederik Johns,256801,1975
-128,Falling Flags,Zulauf-Ward,390731,1962
-129,Free Parking,Rusty Auer DDS,338905,1976
-130,The Frog Catchers Field Manual,Soledad Schaden,165789,1983
-131,The Zookeeper and Her Tiger,Fisher-O'Conner,426491,1988
-132,The Odd Sister,Robyn Crona,379936,1958
-133,A Dozen Heros,"Lehner, Gleason and Cassin",150615,1992
-134,Covered and Warm,Keshaun Kovacek DVM,406543,2004
-135,Same Way Through,Hermiston-Olson,382514,1940
-136,"Ready, Set, Die",Mr. Edmund Heathcote,448047,1998
-137,Finding a New Sun,"Spencer, Treutel and Langworth",208607,1999
-138,Keyboard For Hire,Eldred Wehner,439495,1947
-139,Same Way Through,Collins-Gleichner,328242,1967
-140,Fishing With Chips,Mrs. Retha Hilll,474855,1995
-141,The Odd Sister,Kenneth Lemke,325287,2000
-142,What Lives on Pluto,"Harvey, Windler and Hagenes",297984,1980
-143,Free Parking,Julia Russel,403263,1947
-144,Next Day Previous Night,Dr. Israel Crooks,347625,1961
-145,Future Discretions,Rempel-Mertz,423492,2007
-146,Next Day Previous Night,McLaughlin-Flatley,311626,1982
-147,Fishing With Chips,Cruickshank-Spencer,359157,1971
-148,"Stop Asking, Just Do","Hirthe, Koss and Rippin",274464,1999
-149,The Odd Sister,Freda Schmeler,155291,1974
-150,"Ready, Set, Die","Gulgowski, Turner and Gulgowski",227964,1945
-151,No Lonely Stars,Scottie Cummerata,218097,1981
-152,"Ready, Set, Die",Alison Kerluke,349763,1963
-153,Falling Flags,Shields-Stroman,370705,1957
-154,No Lonely Stars,"Rath, Ankunding and Hauck",371482,1969
-155,Same Way Through,"Walter, Denesik and Rosenbaum",359903,1989
-156,The Zookeeper and Her Tiger,Edgar Reilly,227872,1997
-157,Future Discretions,Johnson LLC,348478,1987
-158,The Frog Catchers Field Manual,Mrs. Grover Rohan,132171,1966
-159,Finding a New Sun,Kamille Raynor,199214,2015
-160,Free Parking,Mercedes Pagac,441317,1963
-161,Next Day Previous Night,"Daniel, Conn and Wuckert",150499,1977
-162,Candy For Two,Ford Crooks,180030,1970
-163,"Ready, Set, Die",Hettinger Group,181924,1944
-164,Keyboard For Hire,Edwina Flatley,194416,1995
-165,Tomato in the Window,Cremin Inc,368603,1943
-166,Keyboard For Hire,Pollich-Hyatt,471680,1952
-167,Tomato in the Window,Miss Gregg Torp,188185,1995
-168,Free Parking,Friesen Group,355887,2014
-169,A Year of Walking,Lindgren LLC,456240,1981
-170,Finding a New Sun,Lessie Effertz II,234585,1950
-171,No Lonely Stars,Charlene Baumbach Jr.,221429,1969
-172,Covered and Warm,Rempel-Bartell,123904,1951
-173,The Zookeeper and Her Tiger,Mrs. Myron Raynor,197537,1952
-174,Walking and Running,Rice Inc,293392,1957
-175,Slicker Than Rain,Gerry Powlowski,264561,1946
-176,Fishing With Chips,"Boehm, Lesch and Shields",451302,1993
-177,What Lives on Pluto,"Kassulke, Nitzsche and Veum",457009,1955
-178,Keyboard For Hire,"Gaylord, Johns and Goyette",363534,1958
-179,A Dozen Heros,Bradly Osinski,126779,1964
-180,Tomato in the Window,Nathan Thompson,463087,1962
-181,A Year of Walking,Bauch Group,407543,1952
-182,Candy For Two,Jeff Lang,348058,2007
-183,Walking and Running,Yvonne McKenzie,365423,2012
-184,Next Day Previous Night,Gaylord-Mann,239209,2015
-185,The Odd Sister,Margaret Muller,419947,1973
-186,Walking and Running,Bernard Hills,208811,1966
-187,"Stop Asking, Just Do","Streich, O'Conner and Dickens",368854,1993
-188,The Frog Catchers Field Manual,Kilback-Bogisich,344215,1974
-189,The Frog Catchers Field Manual,Jones-Stracke,149421,2007
-190,Covered and Warm,Mayer-Corkery,394591,2004
-191,The Zookeeper and Her Tiger,Terence Paucek,422711,1984
-192,"Stop Asking, Just Do",Katlyn Spinka,212667,1963
-193,Slicker Than Rain,McGlynn-Sanford,222547,1946
-194,Falling Flags,Ms. Tracey Bogisich,298265,1947
-195,No Lonely Stars,Freda Zboncak,371631,1991
-196,Covered and Warm,Vicenta Reynolds,357122,1964
-197,The Zookeeper and Her Tiger,"King, Reynolds and Koss",178344,2013
-198,Slicker Than Rain,Tillman Inc,136279,1997
-199,"Stop Asking, Just Do","McDermott, Leffler and Conn",445184,1966
-200,What Lives on Pluto,Jordan McGlynn,368172,1970
-201,A Year of Walking,Jettie Smith,194248,2010
-202,Covered and Warm,Eduardo Zulauf,348698,1951
-203,Fishing With Chips,"Lindgren, Crona and Hirthe",152624,1961
-204,The Frog Catchers Field Manual,Sage Olson,182257,1987
-205,Falling Flags,"Fay, Huel and Predovic",466503,1977
-206,No Lonely Stars,"Littel, Kunde and Wisozk",434947,1967
-207,Candy For Two,Hahn-Lowe,408760,1940
-208,Future Discretions,Stracke and Sons,128301,1981
-209,Fishing With Chips,Stefanie Kuhlman,340129,1959
-210,The Zookeeper and Her Tiger,"O'Reilly, Huels and Bayer",127539,2000
-211,Free Parking,Allie McCullough,127372,1956
-212,No Lonely Stars,Schneider-Hettinger,445343,1974
-213,Covered and Warm,Breana Gerlach,171825,1950
-214,Keyboard For Hire,Hermina Hammes,404338,1969
-215,Keyboard For Hire,Aiyana Becker,275366,1949
-216,Tomato in the Window,Mr. Alfonzo Wilkinson,316162,1997
-217,Next Day Previous Night,Zelda Breitenberg,140265,1953
-218,What Lives on Pluto,Jarvis Wolff V,393962,2008
-219,The Frog Catchers Field Manual,"Becker, Gutkowski and Nitzsche",374932,1965
-220,Free Parking,Nellie Stark,149703,1949
-221,Candy For Two,Effertz-Turcotte,435510,1967
-222,The Zookeeper and Her Tiger,Mariam Hagenes,368362,1958
-223,Finding a New Sun,Schowalter-Schiller,381665,1992
-224,Covered and Warm,Matteo Lueilwitz,436515,2000
-225,Keyboard For Hire,Braulio Frami,354134,1951
-226,"Stop Asking, Just Do","Wolff, Kub and Littel",429001,1956
-227,Future Discretions,Joe Stiedemann,297933,1994
-228,Finding a New Sun,Hammes-Hauck,393160,2002
-229,Slicker Than Rain,Bernier Inc,151978,1958
-230,Fishing With Chips,"Hilpert, Orn and Sawayn",240126,1988
-231,Tomato in the Window,MacGyver-Heller,371655,1961
-232,Next Day Previous Night,Wiegand and Sons,456066,1968
-233,Future Discretions,Jacobson Group,185459,2004
-234,A Year of Walking,Swift-Schoen,300803,2009
-235,A Year of Walking,Samanta Mosciski,448096,1956
-236,"Ready, Set, Die",Mr. Ashlynn Wilderman,149832,1971
-237,A Year of Walking,"Weber, Pagac and Schoen",282347,2006
-238,Same Way Through,Weldon Shanahan,165973,1984
-239,What Lives on Pluto,"Johns, Farrell and Hoppe",311314,1945
-240,A Dozen Heros,Miss Jaylen Gerhold,391476,1959
-241,Falling Flags,"Wiegand, Reinger and Schmitt",272282,1949
-242,Covered and Warm,Electa Glover,309970,1960
-243,Keyboard For Hire,Williamson LLC,473593,2009
-244,"Ready, Set, Die",Rosina Hagenes,433020,1984
-245,Next Day Previous Night,Shea Bailey,405063,1944
-246,The Frog Catchers Field Manual,Leonard Corwin,409420,1988
-247,A Dozen Heros,Giovanny Kunde,398250,1987
-248,Fishing With Chips,Camren Berge,192901,1974
-249,Burning Water,Tomas Schinner,156536,1988
+1,"Ready, Set, Die",Peyton Schamberger,159989,1994
+2,Covered and Warm,Linnea Bins,301016,1988
+3,Covered and Warm,Emelia Durgan,430418,1954
+4,Fishing With Chips,Otilia Pouros,150206,1996
+5,Falling Flags,Koch Group,214349,1940
+6,"Stop Asking, Just Do",Hector Kirlin,319237,2013
+7,"Stop Asking, Just Do",Viviane Connelly V,145403,1955
+8,Next Day Previous Night,"Rodriguez, Wintheiser and Bruen",249512,1967
+9,Candy For Two,Lexi Paucek,443379,1987
+10,The Zookeeper and Her Tiger,"Cartwright, Green and Morar",277439,1953
+11,Fishing With Chips,Lamont Green,136842,1964
+12,Slicker Than Rain,Gusikowski-Windler,368316,2002
+13,Keyboard For Hire,Halvorson-Kozey,339082,1943
+14,Next Day Previous Night,Angelita Wolff,471302,1959
+15,Free Parking,Hahn-Beer,326281,1950
+16,Next Day Previous Night,Powlowski-Boehm,337512,1942
+17,Future Discretions,Bryce Grant,295655,2010
+18,Next Day Previous Night,Ms. Ubaldo Ferry,235115,1947
+19,Finding a New Sun,Hyatt-Oberbrunner,411569,1949
+20,Walking and Running,Sydni Streich,264015,1983
+21,A Dozen Heros,Kiana Rau,440915,1972
+22,A Year of Walking,Mraz Inc,206398,1977
+23,Same Way Through,Mitchell Gottlieb,380654,1971
+24,Burning Water,"Rutherford, Osinski and Strosin",461671,1960
+25,No Lonely Stars,Stephanie Kerluke,386737,1986
+26,No Lonely Stars,"Barton, Murphy and Emard",286344,2006
+27,A Year of Walking,Ms. Juana Harris,175947,1986
+28,Fishing With Chips,Mr. Deborah O'Conner,300314,1979
+29,Fishing With Chips,Bernhard Inc,397725,1951
+30,The Odd Sister,Dooley Inc,181675,1997
+31,"Ready, Set, Die",Armani Dibbert,410834,2012
+32,Future Discretions,Mr. Christelle Gutmann,246890,1999
+33,"Stop Asking, Just Do","Cormier, Hauck and Stehr",224609,1958
+34,What Lives on Pluto,Ruecker Inc,465894,1981
+35,Future Discretions,Larissa Cormier,358565,1998
+36,The Zookeeper and Her Tiger,"Paucek, Leffler and Stroman",153820,1955
+37,The Frog Catchers Field Manual,Balistreri Inc,339550,1981
+38,A Dozen Heros,Deckow-Kreiger,309172,1989
+39,The Frog Catchers Field Manual,Shields-Goyette,411502,1981
+40,Walking and Running,Gerlach and Sons,195268,1974
+41,"Stop Asking, Just Do",Wisoky-Lubowitz,383824,1989
+42,Candy For Two,Hamill Group,145838,1972
+43,Free Parking,Spencer Jakubowski,313265,2002
+44,"Ready, Set, Die",Rodriguez Group,305102,1952
+45,Future Discretions,Abshire-Weissnat,192550,1970
+46,Keyboard For Hire,"Runolfsson, Mayert and Mohr",461662,1959
+47,What Lives on Pluto,Mrs. Cletus Dickens,317973,1961
+48,A Dozen Heros,Ratke-McCullough,370133,2014
+49,Slicker Than Rain,"Ullrich, Mayert and Rippin",255187,2009
+50,Tomato in the Window,"Wisozk, Luettgen and Cremin",388649,1943
+51,Keyboard For Hire,Hobart Volkman MD,369528,1968
+52,Slicker Than Rain,Ansel Kirlin,264896,1985
+53,A Dozen Heros,Alf Will,220658,2006
+54,A Dozen Heros,Hans Welch,377038,1968
+55,Finding a New Sun,Chad Ruecker,205281,1965
+56,Future Discretions,"Turner, Weissnat and Davis",373592,1995
+57,The Frog Catchers Field Manual,Miss Charley Ruecker,230243,1985
+58,What Lives on Pluto,Wilhelm Strosin,415502,2011
+59,Future Discretions,Kara MacGyver,350858,1969
+60,Next Day Previous Night,Mikayla Cartwright PhD,155231,1965
+61,No Lonely Stars,Elouise Feil,234887,1994
+62,Keyboard For Hire,Mrs. Isadore Morar,164316,2000
+63,The Zookeeper and Her Tiger,Eloisa Ankunding,162038,1981
+64,Covered and Warm,Lemke-Langworth,380327,1971
+65,Fishing With Chips,Konopelski-Walter,272488,2006
+66,The Zookeeper and Her Tiger,"O'Conner, Rosenbaum and Littel",325577,1975
+67,A Dozen Heros,Bogisich-Rau,144608,2003
+68,Tomato in the Window,Gutkowski-Feil,401853,1993
+69,Keyboard For Hire,"Schultz, Johns and Jenkins",145372,1983
+70,The Frog Catchers Field Manual,Lebsack and Sons,473626,1974
+71,A Dozen Heros,Ernser Group,244316,1969
+72,The Frog Catchers Field Manual,Percival Haag,158914,1976
+73,Burning Water,Veum-Bergstrom,207641,1987
+74,Free Parking,West Group,192571,2002
+75,"Stop Asking, Just Do",Hilpert-Bogan,470978,1966
+76,A Dozen Heros,Raegan Weissnat,370101,1977
+77,Slicker Than Rain,Emmerich-Davis,146892,1973
+78,The Odd Sister,"Kuhlman, Barrows and Dare",394210,1988
+79,A Dozen Heros,Marlin Smith,151290,1983
+80,Free Parking,Ryan LLC,219204,1947
+81,Free Parking,"Torp, Kertzmann and Gutkowski",426092,1994
+82,Tomato in the Window,Karlee Spinka,277551,1959
+83,Falling Flags,Guillermo Wiza,227430,2013
+84,What Lives on Pluto,Hettinger Group,437691,1964
+85,The Odd Sister,Zelma Streich,231163,1983
+86,Tomato in the Window,Ernser Inc,386377,2010
+87,Keyboard For Hire,Boyle-Willms,229175,1964
+88,Falling Flags,Kailey Hessel,319475,1966
+89,Burning Water,Ms. Burley Macejkovic,292435,2011
+90,"Stop Asking, Just Do","McCullough, Baumbach and Howe",271380,1973
+91,Candy For Two,Corwin-Kiehn,310178,2014
+92,"Ready, Set, Die",Carolyne Greenholt,358202,2001
+93,What Lives on Pluto,Trey Schulist,207930,1945
+94,Next Day Previous Night,Mrs. Scarlett McDermott,424313,1952
+95,Finding a New Sun,Klocko LLC,310742,1997
+96,The Odd Sister,Clovis Hickle DVM,391031,1941
+97,Tomato in the Window,Kenton Ziemann,200429,1941
+98,Same Way Through,Enrico Boehm II,290486,1979
+99,What Lives on Pluto,Elna Harber II,253240,1966
+100,Candy For Two,Cayla Waters DVM,229397,1970
+101,Next Day Previous Night,Caitlyn Kozey,173845,1945
+102,What Lives on Pluto,Chanelle Bradtke,410573,1982
+103,Falling Flags,Harris Inc,151376,1986
+104,Tomato in the Window,Emory Ryan,382867,2013
+105,Finding a New Sun,Hayes-Runolfsdottir,245846,1987
+106,A Year of Walking,Jarvis Wuckert,430670,1973
+107,Walking and Running,Johns LLC,420522,1961
+108,A Dozen Heros,"Stokes, Balistreri and Considine",347034,1983
+109,Fishing With Chips,"Monahan, Tillman and Satterfield",268689,1979
+110,Covered and Warm,"Hand, Abbott and Johnston",190246,1980
+111,Covered and Warm,Katarina Larson,365076,1981
+112,"Stop Asking, Just Do",Kelvin Smith,373546,1994
+113,Slicker Than Rain,Leland Ledner,166275,1970
+114,Finding a New Sun,Boehm-Mayert,333417,1998
+115,No Lonely Stars,Harvey-Jones,437732,1996
+116,Tomato in the Window,"Pagac, Koepp and Hudson",417634,1990
+117,Same Way Through,Upton-Swaniawski,387232,1962
+118,Next Day Previous Night,"McGlynn, Hahn and Stokes",168105,2009
+119,Burning Water,Sister Fisher,338977,2001
+120,The Zookeeper and Her Tiger,"Donnelly, Block and Kertzmann",291433,2008
+121,A Dozen Heros,Mr. Rocio Senger,253607,1975
+122,A Dozen Heros,Koelpin-Gaylord,222710,1941
+123,"Stop Asking, Just Do",Rusty Ruecker,369632,1993
+124,Covered and Warm,Mr. Richie Dickinson,376027,1975
+125,The Zookeeper and Her Tiger,Lockman-Howell,186204,1975
+126,Tomato in the Window,Corene Parker,334322,1956
+127,Burning Water,Jazmin Douglas III,312634,1983
+128,A Year of Walking,Dr. Tremayne Feest,326011,1977
+129,Covered and Warm,Mr. Sierra Berge,155013,1992
+130,Falling Flags,Harber-Botsford,209205,2004
+131,Walking and Running,"Stehr, Lindgren and Dare",327674,2006
+132,Free Parking,"Kirlin, Beatty and Conn",144254,2013
+133,Next Day Previous Night,Sipes Group,136081,2004
+134,Walking and Running,Kayden Bergnaum,216377,1998
+135,Free Parking,Boyer Inc,261199,1973
+136,Next Day Previous Night,Gabriel Orn,341516,1953
+137,No Lonely Stars,"Leannon, Lemke and Padberg",389830,2001
+138,What Lives on Pluto,Kirlin-Adams,432604,2000
+139,"Ready, Set, Die",Miss Chase Johns,455091,1986
+140,No Lonely Stars,Libbie Boyle,268824,1955
+141,Finding a New Sun,Ms. Darien Goodwin,183551,2013
+142,A Year of Walking,Jovany Bradtke Sr.,424900,1945
+143,Fishing With Chips,Easter Herman,255159,2003
+144,Slicker Than Rain,Milton Glover,478542,1959
+145,Falling Flags,Jones-Heller,167136,1942
+146,The Zookeeper and Her Tiger,Mr. Danika Pouros,196110,2009
+147,No Lonely Stars,Olga Wintheiser,132959,1953
+148,Finding a New Sun,Joshua Hammes I,258721,1966
+149,The Frog Catchers Field Manual,Gunner Cronin,333451,1967
+150,"Ready, Set, Die","Johnson, Powlowski and Torp",128798,2001
+151,Slicker Than Rain,"Wyman, Moore and Roberts",427039,2015
+152,The Zookeeper and Her Tiger,Medhurst-Parisian,189162,1991
+153,"Stop Asking, Just Do",Bahringer-Schimmel,395706,1976
+154,Next Day Previous Night,Hagenes Inc,444670,2006
+155,A Dozen Heros,Cali Spencer DDS,302053,1978
+156,Fishing With Chips,Jaunita Weber,385191,2001
+157,The Zookeeper and Her Tiger,McCullough-Bergstrom,230095,2013
+158,Keyboard For Hire,Lupe Howe,279047,1990
+159,The Frog Catchers Field Manual,Schiller Inc,216009,1976
+160,"Ready, Set, Die",Miss Roselyn Lindgren,243273,1954
+161,Fishing With Chips,Lavina Koch,309739,1941
+162,The Odd Sister,Dibbert Inc,301291,1945
+163,The Frog Catchers Field Manual,Johnston Inc,292959,1971
+164,A Year of Walking,Metz LLC,289724,1980
+165,Tomato in the Window,Melvina Kulas MD,344192,2004
+166,Finding a New Sun,Lind-Spencer,479015,2002
+167,Fishing With Chips,Greenfelder LLC,137826,2012
+168,Finding a New Sun,Belle Bechtelar IV,453508,1942
+169,What Lives on Pluto,"Hagenes, Cassin and Johnston",246778,2014
+170,"Ready, Set, Die",Beaulah Fahey,339556,1988
+171,Falling Flags,Marisol Hauck,266284,1958
+172,Finding a New Sun,Angela Kuhn,176341,1997
+173,Next Day Previous Night,"Balistreri, Lowe and Collins",344194,1990
+174,Future Discretions,Ms. Johathan Gleason,395684,1995
+175,Finding a New Sun,Cruickshank-Waelchi,289665,2003
+176,A Dozen Heros,Barry Smith,264983,1999
+177,Finding a New Sun,Nader Group,289974,1976
+178,Burning Water,Dasia Goyette,441801,2009
+179,Next Day Previous Night,Carter Inc,309986,1966
+180,Next Day Previous Night,Jermain Mosciski,229894,1977
+181,Covered and Warm,Gusikowski-Padberg,351092,2000
+182,Covered and Warm,Kohler-Doyle,146504,1995
+183,No Lonely Stars,"Kuhic, Konopelski and Gaylord",413650,1959
+184,Walking and Running,"Bode, Olson and Ullrich",122482,1988
+185,Falling Flags,Daugherty-Waelchi,209029,2001
+186,Same Way Through,"Stiedemann, Cormier and Boehm",306023,1971
+187,What Lives on Pluto,Schmitt-West,348090,1965
+188,The Frog Catchers Field Manual,Alysha McClure DVM,354715,1996
+189,Free Parking,Krajcik LLC,386651,1975
+190,"Ready, Set, Die",Christy Funk,190332,1962
+191,Same Way Through,"Senger, Quigley and Nikolaus",177378,1959
+192,Same Way Through,Dr. Lula Haag,131427,2010
+193,Tomato in the Window,Kevon Rau,233553,1949
+194,Burning Water,Wiegand-Lockman,354126,1994
+195,The Zookeeper and Her Tiger,"D'Amore, Funk and Ward",354231,1978
+196,Future Discretions,Tania O'Hara V,338085,1968
+197,"Stop Asking, Just Do",Sylvan Langworth,279739,1987
+198,Next Day Previous Night,Madyson Keebler,221294,1961
+199,Slicker Than Rain,Yost and Sons,133525,1991
+200,Covered and Warm,Adriana Weber,225516,1947
+201,The Odd Sister,Geovanny Mosciski,290249,1996
+202,What Lives on Pluto,Yesenia Gutkowski,410461,1940
+203,"Ready, Set, Die",Schultz-Heidenreich,313247,1983
+204,A Dozen Heros,Jayda Walter,149350,1979
+205,Finding a New Sun,Koss-Wisozk,128022,1951
+206,A Year of Walking,Bernier and Sons,246816,1978
+207,Future Discretions,"McDermott, Haag and Schimmel",358979,1943
+208,Keyboard For Hire,Bahringer Inc,343573,1989
+209,Falling Flags,Pollich Group,174330,1997
+210,A Year of Walking,Okuneva-Goldner,167967,2015
+211,A Dozen Heros,Eleazar Padberg,288919,2008
+212,Walking and Running,Zieme and Sons,208808,1963
+213,Candy For Two,Miss Gerda Mosciski,389803,1997
+214,A Year of Walking,Devin Kulas,171814,1982
+215,The Odd Sister,Alf Harris,340529,2010
+216,What Lives on Pluto,Tyrel Kling,281993,1972
+217,The Odd Sister,Schowalter Inc,369552,1953
+218,Candy For Two,"Feeney, Douglas and Gusikowski",448347,1950
+219,Free Parking,Miss Laron Zboncak,127985,1986
+220,Fishing With Chips,Dr. Jeromy Satterfield,370480,1997
+221,"Stop Asking, Just Do",Brakus-Volkman,410532,2010
+222,Same Way Through,Arnaldo Langworth,358313,2005
+223,Fishing With Chips,Kristian Hettinger,411335,1985
+224,The Odd Sister,Ernser Inc,342185,1955
+225,Falling Flags,Franco Jacobs,363417,1966
+226,A Dozen Heros,Clara Bartell,280483,1987
+227,Same Way Through,Gottlieb-Pfeffer,257442,1942
+228,Tomato in the Window,Dr. Doug Stamm,198493,1986
+229,Burning Water,Caleb Leannon,219499,1950
+230,Slicker Than Rain,Corwin LLC,232859,1966
+231,Walking and Running,Evelyn Kirlin,314144,1956
+232,"Stop Asking, Just Do",Keeling LLC,138898,1960
+233,Burning Water,Hammes and Sons,475132,1967
+234,A Dozen Heros,Chelsey Schamberger,239701,1940
+235,Keyboard For Hire,Crist Inc,283692,1966
+236,What Lives on Pluto,Lincoln Schneider,296739,1997
+237,The Frog Catchers Field Manual,Miss Javon McDermott,167580,1998
+238,The Zookeeper and Her Tiger,"Jast, Walker and Bergnaum",292165,1953
+239,A Dozen Heros,DuBuque-Orn,323034,1970
+240,Free Parking,D'Amore Group,199132,1942
+241,Slicker Than Rain,Rafaela Morar IV,186976,1940
+242,Next Day Previous Night,Lorna Dickinson DVM,371607,1985
+243,A Year of Walking,Pfeffer-McDermott,309088,1963
+244,Fishing With Chips,Mr. Genevieve Kreiger,285826,1968
+245,A Dozen Heros,Schaden Inc,253675,1940
+246,What Lives on Pluto,Mrs. Rozella Watsica,156960,1976
+247,"Stop Asking, Just Do",Gulgowski-O'Kon,305003,2009
+248,No Lonely Stars,Kerluke LLC,316284,1974
+249,The Odd Sister,Gisselle Eichmann,170101,1965
+250,Same Way Through,Dr. Lavinia Batz,145532,1981
+251,Free Parking,Ms. Gaylord Hodkiewicz,304040,2005
+252,A Year of Walking,Aracely Herman,178113,2008
+253,Free Parking,"Kirlin, Pfannerstill and Ledner",451723,1942
+254,Fishing With Chips,Ena Mraz,280570,2001

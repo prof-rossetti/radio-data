@@ -59,15 +59,15 @@ def thumb_headers
 end
 
 def song_count
-  250
+  255
 end
 
 def listener_count
-  80
+  88
 end
 
 def play_count
-  80
+  12034
 end
 
 def song_ids
@@ -115,7 +115,7 @@ def write_listeners_to_file
     listener_count.times do |n|
       next if n == 0
       real_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
-      full_name = (rand < 0.3 ? full_name : Faker::Internet.user_name(full_name))
+      full_name = (rand < 0.3 ? real_name : Faker::Internet.user_name(full_name))
       listener = {
         :id => n,
         :full_name => full_name,
@@ -224,8 +224,8 @@ def write_plays_to_file
 end
 
 def generate_data
-  #write_songs_to_file
-  #write_listeners_to_file
+  write_songs_to_file
+  write_listeners_to_file
   write_plays_to_file
 end
 
