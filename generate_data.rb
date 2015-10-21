@@ -30,6 +30,7 @@ def write_songs_to_file
   FileUtils.rm_f(songs_path)
   CSV.open(songs_path, "w", :write_headers=> true, :headers => song_headers) do |csv|
     250.times do |n|
+      next if n == 0
       song = {
         :id => n,
         :title => Faker::Book.title, # (rand < 0.5 ? Faker::App.name : Faker::Book.title),
@@ -48,6 +49,7 @@ def write_listeners_to_file
   FileUtils.rm_f(listeners_path)
   CSV.open(listeners_path, "w", :write_headers=> true, :headers => listener_headers) do |csv|
     80.times do |n|
+      next if n == 0
       full_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
       listener = {
         :id => n,
@@ -61,7 +63,7 @@ def write_listeners_to_file
 end
 
 def generate_data
-  #write_songs_to_file
+  write_songs_to_file
   write_listeners_to_file
 end
 
