@@ -17,12 +17,20 @@ def listeners_path
   File.join(data_path, "listeners.csv")
 end
 
+def listener_accounts_path
+  File.join(data_path, "listener_accounts.csv")
+end
+
 def song_headers
   "id, title, artist_name, duration_milliseconds, year_recorded" # songs.first.keys.map{|k| k.to_s}
 end
 
 def listener_headers
   "id, full_name, email_address"
+end
+
+def listener_account_headers
+  "listener_id, cc_holder_name, cc_number, cc_exp_month, cc_exp_year, cc_zipcode, invoice_usd_per_day"
 end
 
 def write_songs_to_file
@@ -47,17 +55,43 @@ end
 def write_listeners_to_file
   puts "OVERWRITING LISTENERS FILE -- #{listeners_path}"
   FileUtils.rm_f(listeners_path)
+  listeners = []
   CSV.open(listeners_path, "w", :write_headers=> true, :headers => listener_headers) do |csv|
     80.times do |n|
       next if n == 0
-      full_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
+      real_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
+      full_name = (rand < 0.3 ? full_name : Faker::Internet.user_name(full_name))
       listener = {
         :id => n,
-        :full_name => (rand < 0.7 ? full_name : Faker::Internet.user_name(full_name)),
-        :email_address => Faker::Internet.free_email(full_name)
+        :full_name => full_name,
+        :email_address => Faker::Internet.free_email(full_name),
+        :real_name => real_name
       }
       pp listener
-      csv << listener.values
+      csv << listener.except(:real_name).values
+      listeners << listener # including real_name ...
+    end
+
+    write_listener_accounts_to_file(listeners)
+  end
+end
+
+def write_listener_accounts_to_file(listeners)
+  puts "OVERWRITING LISTENER ACCOUNTS FILE -- #{listener_accounts_path}"
+  FileUtils.rm_f(listener_accounts_path)
+  CSV.open(listener_accounts_path, "w", :write_headers=> true, :headers => listener_account_headers) do |csv|
+    listeners.each do |listener|
+      listener_account = {
+        :listener_id => listener[:id],
+        :cc_holder_name => (rand < 0.8 ? listener[:real_name] : Faker::App.author), #(rand < 0.8 ? listener[:real_name] : Faker::Book.author),
+        :cc_number => Faker::Business.credit_card_number,
+        :cc_exp_month => (1..12).to_a.sample,
+        :cc_exp_year => (1..12).to_a.sample,
+        :cc_zipcode => Faker::Address.zip_code,
+        :invoice_usd_per_day => [0.00, 0.20, 0.40].sample
+      }
+      pp listener_account
+      csv << listener_account.values
     end
   end
 end
