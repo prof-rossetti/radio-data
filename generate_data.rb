@@ -4,6 +4,7 @@ require 'pp'
 require 'faker'
 require 'pry'
 require 'csv'
+require 'active_support/core_ext/date_time'
 
 def data_path
   File.expand_path("../data", __FILE__)
@@ -21,6 +22,9 @@ def listener_accounts_path
   File.join(data_path, "listener_accounts.csv")
 end
 
+def plays_path
+  File.join(data_path, "plays.csv")
+end
 def song_headers
   "id, title, artist_name, duration_milliseconds, year_recorded" # songs.first.keys.map{|k| k.to_s}
 end
@@ -33,11 +37,45 @@ def listener_account_headers
   "listener_id, cc_holder_name, cc_number, cc_exp_month, cc_exp_year, cc_zipcode, invoice_usd_per_day"
 end
 
+def play_headers
+  "id, song_id, listener_id, started_playing_at, radio_station_id"
+end
+
+def song_count
+  250
+end
+
+def listener_count
+  80
+end
+
+def play_count
+  80
+end
+
+def song_ids
+  (1..song_count).to_a
+end
+
+def listener_ids
+  (1..listener_count).to_a
+end
+
+def play_times
+  earliest_played_at = DateTime.now - 100 # ... days ago
+  latest_played_at = DateTime.now - 2 # ... days ago
+  play_times = []
+  play_count.times do
+    play_times << Faker::Time.between(earliest_played_at, latest_played_at)
+  end
+  play_times.sort
+end
+
 def write_songs_to_file
   puts "OVERWRITING SONGS FILE -- #{songs_path}"
   FileUtils.rm_f(songs_path)
   CSV.open(songs_path, "w", :write_headers=> true, :headers => song_headers) do |csv|
-    250.times do |n|
+    song_count.times do |n|
       next if n == 0
       song = {
         :id => n,
@@ -57,7 +95,7 @@ def write_listeners_to_file
   FileUtils.rm_f(listeners_path)
   listeners = []
   CSV.open(listeners_path, "w", :write_headers=> true, :headers => listener_headers) do |csv|
-    80.times do |n|
+    listener_count.times do |n|
       next if n == 0
       real_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
       full_name = (rand < 0.3 ? full_name : Faker::Internet.user_name(full_name))
@@ -96,27 +134,28 @@ def write_listener_accounts_to_file(listeners)
   end
 end
 
+def write_plays_to_file
+  puts "OVERWRITING PLAYS FILE -- #{plays_path}"
+  FileUtils.rm_f(plays_path)
+  CSV.open(plays_path, "w", :write_headers=> true, :headers => play_headers) do |csv|
+    play_times.each_with_index do |play_time, play_id|
+      next if play_id == 0
+      play = {
+        :id => play_id,
+        :song_id => song_ids.sample,
+        :listener_id => listener_ids.sample,
+        :started_playing_at => play_time.to_s(:db) # .is_a?(ActiveSupport::TimeWithZone) ? v.to_s(:db) : v
+      }
+      pp play
+      csv << play.values
+    end
+  end
+end
+
 def generate_data
-  write_songs_to_file
-  write_listeners_to_file
+  #write_songs_to_file
+  #write_listeners_to_file
+  write_plays_to_file
 end
 
 generate_data
-
-=begin
-  :responded_at => Faker::Time.between(DateTime.now - 10, DateTime.now - 2),
-  :email => Faker::Internet.free_email(full_name),
-  :nickname => (rand < 0.26 ? Faker::App.name : nil),
-  :date_of_birth => Faker::Date.between(Date.today.year - 15, Date.today.year - 18),
-  :university => Faker::University.name,
-  :graduation_class => ["Freshman","Sophomore","Junior","Senior","Graduate","Alumni"].sample,
-  :hometown => "#{Faker::Address.city}, #{Faker::Address.country}",
-  :majors => (rand < 0.67 ? ["Engineering","Information Systems"].sample : ["Other","Marketing","Finance"].sample),
-  :scheduling => (rand < 0.1 ? (rand < 0.5 ? "conflict_before" : "conflict_after") : nil),
-  :interests =>  Faker::Lorem.paragraph,
-  :interest_adventure =>  (rand < 0.75 ? 1 : 0),
-  :operating_system => (rand < 0.95 ? ["Mac OS","Windows OS"].sample : "Other"),
-  :operating_system_usage_windows => (rand < 0.85 ? 1 : 0),
-  :website_experience => (rand < 0.7 ? 1 : 0),
-  :meetup_comfort => (rand < 0.4 ? "Sounds fine" : "Sounds scary")
-=end
