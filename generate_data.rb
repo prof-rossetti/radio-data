@@ -25,6 +25,15 @@ end
 def plays_path
   File.join(data_path, "plays.csv")
 end
+
+def skips_path
+  File.join(data_path, "skips.csv")
+end
+
+def thumbs_path
+  File.join(data_path, "thumbs.csv")
+end
+
 def song_headers
   "id, title, artist_name, duration_milliseconds, year_recorded" # songs.first.keys.map{|k| k.to_s}
 end
@@ -39,6 +48,14 @@ end
 
 def play_headers
   "id, song_id, listener_id, started_playing_at, radio_station_id"
+end
+
+def skip_headers
+  "id, play_id, skipped_at"
+end
+
+def thumb_headers
+  "id, play_id, thumb_type, thumb_pressed_at"
 end
 
 def song_count
@@ -146,10 +163,11 @@ def write_plays_to_file
         :song_id => song_ids.sample,
         :listener_id => listener_ids.sample,
         :started_playing_at => play_time.to_s(:db), # .is_a?(ActiveSupport::TimeWithZone) ? v.to_s(:db) : v
-        :radio_station_id => (rand < 0.3 ? (1..10009).to_a.sample : nil)
+        :radio_station_id => (rand < 0.3 ? (1..10009).to_a.sample : nil),
+        :play_time => play_time
       }
       pp play
-      csv << play.values
+      csv << play.except(:play_time).values
       plays << play
     end
   end
@@ -160,24 +178,45 @@ def write_plays_to_file
   thumbs = []
   plays.each do |play|
     pp play
-    # either do nothing or thumb or skip
+    if rand < 0.4
+      if rand < 0.7
+        thumb = {
+          :id => 1, # todo
+          :play_id => play[:id],
+          :thumb_type => (rand < 0.5 ? "thumbs-down" : "thumbs-up"),
+          :thumb_pressed_at => play[:play_time] + 25 # ... seconds later
+        }
+        pp thumb
+        thumbs << thumb
+      else
+        skip = {
+          :id => 1, # todo
+          :play_id => play[:id],
+          :skipped_at => play[:play_time] + 25 # ... seconds later
+        }
+        pp skip
+        skips << skip
+      end
+    end
   end
 
-  #puts "OVERWRITING SKIPS FILE -- #{skips_path}"
-  #FileUtils.rm_f(skips_path)
-  #CSV.open(skips_path, "w", :write_headers=> true, :headers => skip_headers) do |csv|
-  #  skips.each do |skip|
-  #    #csv << skip.values
-  #  end
-  #end
-#
-  #puts "OVERWRITING THUMBS FILE -- #{thumbs_path}"
-  #FileUtils.rm_f(thumbs_path)
-  #CSV.open(thumbs_path, "w", :write_headers=> true, :headers => thumb_headers) do |csv|
-  #  thumbs.each do |thumb|
-  #    #csv << thumb.values
-  #  end
-  #end
+  puts "OVERWRITING SKIPS FILE -- #{skips_path}"
+  FileUtils.rm_f(skips_path)
+  CSV.open(skips_path, "w", :write_headers=> true, :headers => skip_headers) do |csv|
+    skips.each do |skip|
+      pp skip
+      csv << skip.values
+    end
+  end
+
+  puts "OVERWRITING THUMBS FILE -- #{thumbs_path}"
+  FileUtils.rm_f(thumbs_path)
+  CSV.open(thumbs_path, "w", :write_headers=> true, :headers => thumb_headers) do |csv|
+    thumbs.each do |thumb|
+      pp thumb
+      csv << thumb.values
+    end
+  end
 end
 
 def generate_data
