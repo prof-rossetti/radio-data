@@ -176,26 +176,30 @@ def write_plays_to_file
 
   skips = []
   thumbs = []
+  skip_id = 1
+  thumb_id = 1
   plays.each do |play|
     pp play
     if rand < 0.4
       if rand < 0.7
         thumb = {
-          :id => 1, # todo
+          :id => thumb_id,
           :play_id => play[:id],
           :thumb_type => (rand < 0.5 ? "thumbs-down" : "thumbs-up"),
           :thumb_pressed_at => play[:play_time] + 25 # ... seconds later
         }
         pp thumb
         thumbs << thumb
+        thumb_id +=1
       else
         skip = {
-          :id => 1, # todo
+          :id => skip_id,
           :play_id => play[:id],
           :skipped_at => play[:play_time] + 25 # ... seconds later
         }
         pp skip
         skips << skip
+        skip_id +=1
       end
     end
   end
