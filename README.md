@@ -1,14 +1,15 @@
-# Fake Responses
+# Radio Data
 
-Generates .csv files of varying sizes, each filled with fake response data.
+Generates a related set of .csv files,
+ which represent usage data from an online music streaming service.
 
 ## Prerequisities
 
 Clone this repository.
 
 ```` sh
-git clone git@github.com:gwu-business/fake-responses.git
-cd fake-responses/
+git clone git@github.com:gwu-business/radio-data.git
+cd radio-data/
 ````
 
 Install ruby and bundler.
@@ -24,7 +25,7 @@ bundle install
 Generate data.
 
 ```` sh
-ruby fake_responses.rb
+ruby generate_data.rb
 ````
 
 ## Contributing
