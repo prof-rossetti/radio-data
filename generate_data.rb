@@ -13,11 +13,19 @@ def songs_path
   File.join(data_path, "songs.csv")
 end
 
+def listeners_path
+  File.join(data_path, "listeners.csv")
+end
+
 def song_headers
   "id, title, artist_name, duration_milliseconds, year_recorded" # songs.first.keys.map{|k| k.to_s}
 end
 
-def write_to_file
+def listener_headers
+  "id, full_name, email_address"
+end
+
+def write_songs_to_file
   puts "OVERWRITING SONGS FILE -- #{songs_path}"
   FileUtils.rm_f(songs_path)
   CSV.open(songs_path, "w", :write_headers=> true, :headers => song_headers) do |csv|
@@ -35,8 +43,26 @@ def write_to_file
   end
 end
 
+def write_listeners_to_file
+  puts "OVERWRITING LISTENERS FILE -- #{listeners_path}"
+  FileUtils.rm_f(listeners_path)
+  CSV.open(listeners_path, "w", :write_headers=> true, :headers => listener_headers) do |csv|
+    80.times do |n|
+      full_name = "#{Faker::Name.first_name} #{Faker::Name.last_name}"
+      listener = {
+        :id => n,
+        :full_name => (rand < 0.7 ? full_name : Faker::Internet.user_name(full_name)),
+        :email_address => Faker::Internet.free_email(full_name)
+      }
+      pp listener
+      csv << listener.values
+    end
+  end
+end
+
 def generate_data
-  write_to_file
+  #write_songs_to_file
+  write_listeners_to_file
 end
 
 generate_data
