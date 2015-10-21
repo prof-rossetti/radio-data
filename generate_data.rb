@@ -137,6 +137,7 @@ end
 def write_plays_to_file
   puts "OVERWRITING PLAYS FILE -- #{plays_path}"
   FileUtils.rm_f(plays_path)
+  plays = []
   CSV.open(plays_path, "w", :write_headers=> true, :headers => play_headers) do |csv|
     play_times.each_with_index do |play_time, play_id|
       next if play_id == 0
@@ -144,12 +145,39 @@ def write_plays_to_file
         :id => play_id,
         :song_id => song_ids.sample,
         :listener_id => listener_ids.sample,
-        :started_playing_at => play_time.to_s(:db) # .is_a?(ActiveSupport::TimeWithZone) ? v.to_s(:db) : v
+        :started_playing_at => play_time.to_s(:db), # .is_a?(ActiveSupport::TimeWithZone) ? v.to_s(:db) : v
+        :radio_station_id => (rand < 0.3 ? (1..10009).to_a.sample : nil)
       }
       pp play
       csv << play.values
+      plays << play
     end
   end
+
+  # CREATE SKIPS AND THUMBS
+
+  skips = []
+  thumbs = []
+  plays.each do |play|
+    pp play
+    # either do nothing or thumb or skip
+  end
+
+  #puts "OVERWRITING SKIPS FILE -- #{skips_path}"
+  #FileUtils.rm_f(skips_path)
+  #CSV.open(skips_path, "w", :write_headers=> true, :headers => skip_headers) do |csv|
+  #  skips.each do |skip|
+  #    #csv << skip.values
+  #  end
+  #end
+#
+  #puts "OVERWRITING THUMBS FILE -- #{thumbs_path}"
+  #FileUtils.rm_f(thumbs_path)
+  #CSV.open(thumbs_path, "w", :write_headers=> true, :headers => thumb_headers) do |csv|
+  #  thumbs.each do |thumb|
+  #    #csv << thumb.values
+  #  end
+  #end
 end
 
 def generate_data
