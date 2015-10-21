@@ -20,6 +20,13 @@ Install gem dependencies:
 bundle install
 ````
 
+### Environment Variables
+
+Grab an rdio api key (client id and client secret), and add each respective environment variable to .bash_profile:
+
+ + `RADIO_DATA_RDIO_CLIENT_ID`
+ + `RADIO_DATA_RDIO_CLIENT_SECRET`
+
 ## Usage
 
 Generate data.

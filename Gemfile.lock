@@ -1,15 +1,38 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.0)
     faker (1.5.0)
       i18n (~> 0.5)
+    faraday (0.8.11)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.8.8)
+      faraday (>= 0.7.4, < 0.9)
+    hashie (1.2.0)
     i18n (0.7.0)
+    method_source (0.8.2)
+    multi_json (1.3.7)
+    multipart-post (1.2.0)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rdio_api (0.1.1)
+      faraday (~> 0.8.0)
+      faraday_middleware (~> 0.8.7)
+      hashie (~> 1.2.0)
+      multi_json (~> 1.3.0)
+      simple_oauth (~> 0.1.5)
+    simple_oauth (0.1.9)
+    slop (3.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   faker
+  pry
+  rdio_api
 
 BUNDLED WITH
    1.10.5

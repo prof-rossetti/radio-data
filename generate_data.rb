@@ -4,6 +4,10 @@ require 'pp'
 require 'faker'
 require 'pry'
 require 'csv'
+require 'rdio_api'
+
+CONSUMER_KEY = ENV['RADIO_DATA_RDIO_CLIENT_ID']
+CONSUMER_SECRET = ENV['RADIO_DATA_RDIO_CLIENT_SECRET']
 
 def data_path
   File.expand_path("../data", __FILE__)
@@ -17,22 +21,30 @@ def song_headers
   "id, title, artist_name, duration_milliseconds, year_recorded" # songs.first.keys.map{|k| k.to_s}
 end
 
+def client
+  client = RdioApi.new(:consumer_key => CONSUMER_KEY, :consumer_secret => CONSUMER_SECRET)
+  binding.pry
+end
+
 def write_to_file
   puts "OVERWRITING SONGS FILE -- #{songs_path}"
   FileUtils.rm_f(songs_path)
-  CSV.open(songs_path, "w", :write_headers=> true, :headers => song_headers) do |csv|
-    250.times do |n|
-      song = {
-        :id => n,
-        :title => Faker::Book.title, # (rand < 0.5 ? Faker::App.name : Faker::Book.title),
-        :artist_name => Faker::App.author, # (rand < 0.5 ? Faker::App.author : Faker::Book.author), # "#{Faker::Name.first_name} #{Faker::Name.last_name}",
-        :duration_milliseconds => (120000..480000).to_a.sample,
-        :year_recorded => ((Date.today.year - 75)..Date.today.year).to_a.sample
-      }
-      pp song
-      csv << song.values
-    end
-  end
+  top_songs = client.getHeavyRotation(:type => "albums")
+  binding.pry
+
+  #CSV.open(songs_path, "w", :write_headers=> true, :headers => song_headers) do |csv|
+  #  250.times do |n|
+  #    song = {
+  #      :id => n,
+  #      :title => Faker::Book.title, # (rand < 0.5 ? Faker::App.name : Faker::Book.title),
+  #      :artist_name => Faker::App.author, # (rand < 0.5 ? Faker::App.author : Faker::Book.author), # "#{Faker::Name.first_name} #{Faker::Name.last_name}",
+  #      :duration_milliseconds => (120000..480000).to_a.sample,
+  #      :year_recorded => ((Date.today.year - 75)..Date.today.year).to_a.sample
+  #    }
+  #    pp song
+  #    csv << song.values
+  #  end
+  #end
 end
 
 def generate_data
