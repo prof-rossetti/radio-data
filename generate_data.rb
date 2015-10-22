@@ -136,10 +136,18 @@ def write_listener_accounts_to_file(listeners)
   FileUtils.rm_f(listener_accounts_path)
   CSV.open(listener_accounts_path, "w", :write_headers=> true, :headers => listener_account_headers) do |csv|
     listeners.each do |listener|
+      somewhat_unique_cc_number = case listener[:id].to_s.length
+      when 1
+        "#{listener[:id].to_s*4}-#{listener[:id].to_s*4}-#{listener[:id].to_s*4}-#{listener[:id].to_s*4}"
+      when 2
+        "#{listener[:id].to_s*2}-#{listener[:id].to_s*2}-#{listener[:id].to_s*2}-#{listener[:id].to_s*2}"
+      else
+        Faker::Business.credit_card_number
+      end
       listener_account = {
         :listener_id => listener[:id],
         :cc_holder_name => (rand < 0.8 ? listener[:real_name] : Faker::App.author), #(rand < 0.8 ? listener[:real_name] : Faker::Book.author),
-        :cc_number => Faker::Business.credit_card_number,
+        :cc_number => somewhat_unique_cc_number,
         :cc_exp_month => (1..12).to_a.sample,
         :cc_exp_year => (Date.today.year..(Date.today.year + 5)).to_a.sample,
         :cc_zipcode => Faker::Address.zip_code,
