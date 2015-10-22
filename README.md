@@ -3,7 +3,7 @@
 Generates a related set of .csv files,
  which represent usage data from an online music streaming service.
 
-## Prerequisities
+## Prerequisites
 
 Clone this repository.
 
