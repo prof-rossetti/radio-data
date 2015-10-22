@@ -141,7 +141,7 @@ def write_listener_accounts_to_file(listeners)
         :cc_holder_name => (rand < 0.8 ? listener[:real_name] : Faker::App.author), #(rand < 0.8 ? listener[:real_name] : Faker::Book.author),
         :cc_number => Faker::Business.credit_card_number,
         :cc_exp_month => (1..12).to_a.sample,
-        :cc_exp_year => (1..12).to_a.sample,
+        :cc_exp_year => (Date.today.year..(Date.today.year + 5)).to_a.sample,
         :cc_zipcode => Faker::Address.zip_code,
         :invoice_usd_per_day => [0.00, 0.20, 0.40].sample
       }
