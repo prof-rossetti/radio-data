@@ -163,13 +163,16 @@ def write_plays_to_file
   puts "OVERWRITING PLAYS FILE -- #{plays_path}"
   FileUtils.rm_f(plays_path)
   plays = []
+  subset_of_listener_ids = listener_ids.sample(listener_ids.count * 0.44)
+  subset_of_song_ids = song_ids.sample(song_ids.count * 0.86)
+
   CSV.open(plays_path, "w", :write_headers=> true, :headers => play_headers) do |csv|
     play_times.each_with_index do |play_time, play_id|
       next if play_id == 0
       play = {
         :id => play_id,
-        :song_id => song_ids.sample,
-        :listener_id => listener_ids.sample,
+        :song_id => subset_of_song_ids.sample,
+        :listener_id => subset_of_listener_ids.sample,
         :started_playing_at => play_time.to_s(:db), # .is_a?(ActiveSupport::TimeWithZone) ? v.to_s(:db) : v
         :radio_station_id => (rand < 0.3 ? (1..10009).to_a.sample : nil),
         :play_time => play_time
